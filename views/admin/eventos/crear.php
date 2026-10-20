@@ -9,7 +9,7 @@
 
 <div class="dashboard__formulario">
     <?php 
-        include_once __DIR__ . '../../../templates/alertas.php';
+        include_once __DIR__ . '/../../templates/alertas.php';
     ?>
 
     

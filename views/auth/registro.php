@@ -3,17 +3,17 @@
     <p class="auth__texto">Solicitar registro en &lt;ClubDeportivo/></p>
 
     <?php
-        require_once __DIR__ . '../../templates/alertas.php';
+        require_once __DIR__ . '/../templates/alertas.php';
     ?>
 
     <div class="dashboard__formulario">
             <?php 
-                include_once __DIR__ . '../../templates/alertas.php';
+                include_once __DIR__ . '/../templates/alertas.php';
             ?>
 
             <form method="POST" enctype="multipart/form-data" class="formulario">
 
-                <?php include_once __DIR__ . '../../admin/panel/formulario.php'; ?>
+                <?php include_once __DIR__ . '/../admin/panel/formulario.php'; ?>
 
             <input type="submit" class="formulario__submit" value="Solicitar Inscripción" />
             

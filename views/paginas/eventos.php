@@ -11,7 +11,7 @@
             <div class="eventos__listado slider swiper">
                 <div class="swiper-wrapper" >
                     <?php foreach($eventos['torneos_v'] as $evento) { ?>
-                        <?php include __DIR__ . '../../templates/evento.php'; ?>
+                        <?php include __DIR__ . '/../templates/evento.php'; ?>
                     <?php } ?>
                 </div>
                 
@@ -22,7 +22,7 @@
                <div class="eventos__listado slider swiper">
                 <div class="swiper-wrapper">
                      <?php foreach($eventos['torneos_s'] as $evento) { ?>
-                        <?php include __DIR__ . '../../templates/evento.php'; ?>
+                        <?php include __DIR__ . '/../templates/evento.php'; ?>
                     <?php } ?>
                 </div>
                 
@@ -36,7 +36,7 @@
                 <div class="eventos__listado slider swiper">
                 <div class="swiper-wrapper">
                      <?php foreach($eventos['campus_v'] as $evento) { ?>
-                        <?php include __DIR__ . '../../templates/evento.php'; ?>
+                        <?php include __DIR__ . '/../templates/evento.php'; ?>
                     <?php } ?>
                 </div>
                 
@@ -47,7 +47,7 @@
                 <div class="eventos__listado slider swiper">
                 <div class="swiper-wrapper">
                      <?php foreach($eventos['campus_s'] as $evento) { ?>
-                        <?php include __DIR__ . '../../templates/evento.php'; ?>
+                        <?php include __DIR__ . '/../templates/evento.php'; ?>
                     <?php } ?>
                 </div>
                 

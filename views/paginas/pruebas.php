@@ -11,7 +11,7 @@
             <div class="swiper-wrapper">
                 <?php foreach($patrocinadores['oro'] as $patrocinador) : ?>
                     <div class="swiper-slide">
-                        <?php include __DIR__ . '../../templates/patrocinador.php'; ?>
+                        <?php include __DIR__ . '/../templates/patrocinador.php'; ?>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -26,7 +26,7 @@
                     
                     <?php foreach($patrocinadores['plata'] as $patrocinador) : ?>
                         <div class="swiper-slide">
-                        <?php include __DIR__ . '../../templates/patrocinador.php'; ?>
+                        <?php include __DIR__ . '/../templates/patrocinador.php'; ?>
                         </div>
                     <?php endforeach; ?>
                 </div>
