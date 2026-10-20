@@ -92,6 +92,10 @@ Abre `http://localhost:3000`. Panel de administración: `admin@demo.test` / `dem
 └── gulpfile.js
 ```
 
+## Roadmap
+
+- Migración a PHP 8.5 (ya realizada en UpTask e Inmogestion).
+
 ## Créditos
 
 La base (router, ActiveRecord, autenticación, registro con PayPal y estructura del panel)
@@ -171,6 +175,10 @@ Open `http://localhost:3000`. Admin panel: `admin@demo.test` / `demo1234`.
 
 See the tree above: `controllers/` (including JSON `API*` controllers), `models/`, `views/`,
 `classes/`, `public/` (front controller and compiled assets), `src/` and a custom `Router.php`.
+
+## Roadmap
+
+- Migration to PHP 8.5 (already done in UpTask and Inmogestion).
 
 ## Credits
 
