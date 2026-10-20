@@ -65,7 +65,7 @@ cp includes/.env.example includes/.env        # y rellena los valores
 php -S localhost:3000 -t public
 ```
 
-Abre <http://localhost:3000>. Panel de administración: `admin@demo.test` / `demo1234`.
+Abre `http://localhost:3000`. Panel de administración: `admin@demo.test` / `demo1234`.
 
 - `docs/demo.sql` es un esquema **reconstruido a partir de `models/`** para poder probar la
   app; el repositorio original no incluía la base de datos.
@@ -156,7 +156,7 @@ cp includes/.env.example includes/.env        # then fill in the values
 php -S localhost:3000 -t public
 ```
 
-Open <http://localhost:3000>. Admin panel: `admin@demo.test` / `demo1234`.
+Open `http://localhost:3000`. Admin panel: `admin@demo.test` / `demo1234`.
 
 - `docs/demo.sql` is a schema **rebuilt from `models/`** so the app can be tried out; the
   original repository did not ship the database.
