@@ -1,0 +1,21 @@
+# Credenciales
+.env
+includes/.env
+
+# Dependencias
+/vendor/
+/node_modules/
+
+# Logs y caché
+*.log
+.phpunit.result.cache
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
