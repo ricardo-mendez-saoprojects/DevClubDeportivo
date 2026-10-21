@@ -146,7 +146,7 @@ class Email {
    
     ///// FIRMAS DE LOS PADRES Y MADRES ///////////////////////
 
-    public function enviarCorreoConfirmacionFirma($token, $rutaPDF) {
+    public function enviarCorreoConfirmacionFirma($token) {
         $mail = new PHPMailer();
         $mail->isSMTP();
         $mail->Host = $_ENV['EMAIL_HOST'];
@@ -169,21 +169,8 @@ class Email {
         $contenido .= "<p><img src='{$this->rutaLogo}' alt='Logo de la Empresa'></p>"; // Incluir el logo
         $contenido .= '</html>';
         $mail->Body = $contenido;
-    
-        // // Adjuntar PDF si existe
-        // if (file_exists($rutaPDF)) {
-        //     $mail->addAttachment($rutaPDF, 'Tratamiento.pdf');
-        // }
-    
-        // // Enviar el correo
-        // $mail->send();
 
-         // Adjuntar PDF si existe
-        if (file_exists($rutaPDF)) {
-            $mail->addAttachment($rutaPDF, 'Tratamiento.pdf');
-        } else {
-            error_log("No se pudo encontrar el archivo PDF: " . $rutaPDF);
-        }
+        // Pendiente: adjuntar el documento informativo RGPD real (ver Roadmap del README).
 
         // Enviar el correo
         if(!$mail->send()) {

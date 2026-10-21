@@ -413,17 +413,13 @@ class RegistroController {
                 $resultado = $firma->guardar();
     
                 if ($resultado) {
-                    // Ruta al PDF
-                    // Ruta al PDF
-                    $rutaPDF = $_SERVER['DOCUMENT_ROOT'] . '/build/pdf/Tratamiento.pdf';
-    
                     // Enviar correo al padre
                     $emailPadre = new Email($usuario->correo_padre, $usuario->padre, $firma->token_padre);
-                    $emailPadre->enviarCorreoConfirmacionFirma($firma->token_padre, $rutaPDF);
-    
+                    $emailPadre->enviarCorreoConfirmacionFirma($firma->token_padre);
+
                     // Enviar correo a la madre
                     $emailMadre = new Email($usuario->correo_madre, $usuario->madre, $firma->token_madre);
-                    $emailMadre->enviarCorreoConfirmacionFirma($firma->token_madre, $rutaPDF);
+                    $emailMadre->enviarCorreoConfirmacionFirma($firma->token_madre);
                     
                     header('Location: /firma');
                     exit;

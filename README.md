@@ -24,8 +24,7 @@ solicitudes, entrenadores, eventos, patrocinadores y equipación.
 - **Alta de jugadores:** registro con ficha completa (datos personales, tutores, categoría,
   federado, alergias…), confirmación por email y **aprobación manual** desde el panel.
 - **Autorizaciones con firma:** el jugador firma las autorizaciones y el sistema envía a
-  cada tutor un enlace con token para confirmarlas, con el documento de tratamiento de
-  datos adjunto.
+  cada tutor un enlace con token para confirmarlas.
 - **Renovaciones:** el jugador solicita la renovación y el administrador la acepta o rechaza.
 - **Inscripción y pago:** paquetes con pago mediante el SDK de PayPal, elección de eventos
   con control de plazas y equipación.
@@ -95,6 +94,8 @@ Abre `http://localhost:3000`. Panel de administración: `admin@demo.test` / `dem
 ## Roadmap
 
 - Migración a PHP 8.5 (ya realizada en UpTask e Inmogestion).
+- Pendiente: adjuntar el documento informativo RGPD real al correo de confirmación de
+  las autorizaciones.
 
 ## Créditos
 
@@ -125,7 +126,7 @@ sponsors and kit.
 - **Player sign-up:** full player record (personal data, guardians, category, federation
   licence, allergies…), email confirmation and **manual approval** from the admin panel.
 - **Signed consents:** the player signs the consents and each guardian receives a tokenised
-  link to confirm them, with the data-processing document attached.
+  link to confirm them.
 - **Renewals:** players request a renewal and the admin accepts or rejects it.
 - **Registration and payment:** packages paid through the PayPal SDK, event selection with
   seat limits, and kit.
@@ -179,6 +180,8 @@ See the tree above: `controllers/` (including JSON `API*` controllers), `models/
 ## Roadmap
 
 - Migration to PHP 8.5 (already done in UpTask and Inmogestion).
+- Pending: attach the actual GDPR information document to the consent confirmation
+  email.
 
 ## Credits
 
